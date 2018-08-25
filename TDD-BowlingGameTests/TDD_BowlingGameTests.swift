@@ -10,28 +10,31 @@ import XCTest
 @testable import TDD_BowlingGame
 
 class TDD_BowlingGameTests: XCTestCase {
+    var game: Game!
     override func setUp() {
+        game = Game()
         super.setUp()
     }
     
     override func tearDown() {
         super.tearDown()
+        game = nil
     }
     
     func testGutterGame() {
-        let game = Game()
-        for _ in 1...20 {
-            game.roll(0)
-        }
+        roll(knockPins: 0, times: 20)
         XCTAssertEqual(game.score(), 0)
     }
     
     func testAllTwoPins() {
-        let game = Game()
-        for _ in 1...20 {
-            game.roll(2)
-        }
+        roll(knockPins: 2, times: 20)
         XCTAssertEqual(game.score(), 40)
+    }
+    
+    private func roll(knockPins: Int, times: Int) {
+        for _ in 1...times {
+            game.roll(knockPins)
+        }
     }
     
 }
