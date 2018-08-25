@@ -9,12 +9,12 @@
 import Foundation
 
 class Game {
-    
+    private var totalScore = 0
     func roll(_ pins: Int) {
-        
+     totalScore += pins
     }
     
     func score() -> Int {
-        return 0
+        return totalScore
     }
 }
