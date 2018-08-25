@@ -14,6 +14,7 @@
 		DA0722102131746300D0FA91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA07220E2131746300D0FA91 /* LaunchScreen.storyboard */; };
 		DA07221B2131746300D0FA91 /* TDD_BowlingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07221A2131746300D0FA91 /* TDD_BowlingGameTests.swift */; };
 		DA0722262131755900D0FA91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0722252131755900D0FA91 /* Game.swift */; };
+		DA0722272131760D00D0FA91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0722252131755900D0FA91 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA07221B2131746300D0FA91 /* TDD_BowlingGameTests.swift in Sources */,
+				DA0722272131760D00D0FA91 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
