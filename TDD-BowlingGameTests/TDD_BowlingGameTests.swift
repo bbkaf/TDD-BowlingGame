@@ -31,6 +31,21 @@ class TDD_BowlingGameTests: XCTestCase {
         XCTAssertEqual(game.score(), 40)
     }
     
+    func testSpare() {
+        game.roll(1)
+        game.roll(4)
+        game.roll(5)
+        game.roll(5)
+        game.roll(6)
+        game.roll(0)
+        XCTAssertEqual(game.score(), 27)
+    }
+    
+    func testAllFivePins() {
+        roll(knockPins: 5, times: 21)
+        XCTAssertEqual(game.score(), 150)
+    }
+    
     private func roll(knockPins: Int, times: Int) {
         for _ in 1...times {
             game.roll(knockPins)

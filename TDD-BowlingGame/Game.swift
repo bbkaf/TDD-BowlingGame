@@ -9,12 +9,28 @@
 import Foundation
 
 class Game {
-    private var totalScore = 0
+    private var scores = Array<Int>.init(repeating: 0, count: 21)
+    var currentRoll = 0
     func roll(_ pins: Int) {
-     totalScore += pins
+        scores[currentRoll] = pins
+        currentRoll += 1
     }
     
     func score() -> Int {
-        return totalScore
+        var roll = 0
+        var spareBonus = 0
+        for _ in 1...10 {
+            if isSpare(scores[roll], scores[roll + 1]) {
+                spareBonus += scores[roll + 2]
+                roll += 2
+            } else {
+                roll += 2
+            }
+        }
+        return scores.reduce(0, +) + spareBonus
+    }
+    
+    private func isSpare(_ firstPin: Int, _ secondPin: Int) -> Bool {
+        return firstPin + secondPin == 10 ? true : false
     }
 }
