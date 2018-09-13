@@ -21,7 +21,7 @@ class Game {
         var spareBonus = 0
         var strikeBonus = 0
         for _ in 1...9 {
-            if isStrike(scores[roll], scores[roll + 1]) {
+            if isStrike(scores[roll]) {
                 strikeBonus += scores[roll + 1] + scores[roll + 2]
                 roll += 1
             } else if isSpare(scores[roll], scores[roll + 1]) {
@@ -38,7 +38,7 @@ class Game {
         return firstPin + secondPin == 10 ? true : false
     }
 
-    private func isStrike(_ firstPin: Int, _ secondPin: Int) -> Bool {
+    private func isStrike(_ firstPin: Int) -> Bool {
         return firstPin == 10 ? true : false
     }
 
