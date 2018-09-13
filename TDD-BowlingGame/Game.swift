@@ -24,9 +24,9 @@ class Game {
         for i in 0..<scoresRecord.count {
             if scoresRecord[i] == 10 {
                 roll += 1
-                
             }
         }
+        
         roll += Double((Double(scoresRecord.count) - roll) / 2)
         if roll >= 10 && roll < 12{
             if scoresRecord.last == 10 {
