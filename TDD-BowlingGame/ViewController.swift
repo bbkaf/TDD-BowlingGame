@@ -36,6 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        rollTableView.accessibilityIdentifier = "rollTableView"
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -47,6 +48,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScoreTableViewCell") as! ScoreTableViewCell
         cell.roll.text = String(rollScores[indexPath.row].roll ?? 0)
         cell.score.text = String(rollScores[indexPath.row].rollScore ?? 0)
+        cell.accessibilityIdentifier = "ScoreTableViewCell_\(indexPath.row)"
         if rollScores[indexPath.row].isStrike ?? false {
             cell.firstPins.text = String(rollScores[indexPath.row].firstPins ?? 0)
             cell.secPins.text = "/"
