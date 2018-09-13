@@ -16,19 +16,10 @@
 		DA0722262131755900D0FA91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0722252131755900D0FA91 /* Game.swift */; };
 		DA0722272131760D00D0FA91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0722252131755900D0FA91 /* Game.swift */; };
 		DA6228D1214971B3000312CD /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6228D0214971B3000312CD /* ScoreTableViewCell.swift */; };
-		DA6228DB21499F92000312CD /* TDD_BowlingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6228DA21499F92000312CD /* TDD_BowlingGameUITests.swift */; };
-		DA6228E221499FC3000312CD /* TDD_BowlingGameUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6228D221499ADE000312CD /* TDD_BowlingGameUITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DA0722172131746300D0FA91 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA0721FA2131746300D0FA91 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA0722012131746300D0FA91;
-			remoteInfo = "TDD-BowlingGame";
-		};
-		DA6228DD21499F92000312CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA0721FA2131746300D0FA91 /* Project object */;
 			proxyType = 1;
@@ -50,8 +41,6 @@
 		DA07221C2131746300D0FA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA0722252131755900D0FA91 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		DA6228D0214971B3000312CD /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
-		DA6228D221499ADE000312CD /* TDD_BowlingGameUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_BowlingGameUITest.swift; sourceTree = "<group>"; };
-		DA6228D821499F92000312CD /* TDD-BowlingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD-BowlingGameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6228DA21499F92000312CD /* TDD_BowlingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_BowlingGameUITests.swift; sourceTree = "<group>"; };
 		DA6228DC21499F92000312CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,13 +54,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA0722132131746300D0FA91 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA6228D521499F92000312CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,7 +78,6 @@
 			children = (
 				DA0722022131746300D0FA91 /* TDD-BowlingGame.app */,
 				DA0722162131746300D0FA91 /* TDD-BowlingGameTests.xctest */,
-				DA6228D821499F92000312CD /* TDD-BowlingGameUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +88,6 @@
 				DA0722052131746300D0FA91 /* AppDelegate.swift */,
 				DA0722072131746300D0FA91 /* ViewController.swift */,
 				DA0722252131755900D0FA91 /* Game.swift */,
-				DA6228D221499ADE000312CD /* TDD_BowlingGameUITest.swift */,
 				DA0722092131746300D0FA91 /* Main.storyboard */,
 				DA6228D0214971B3000312CD /* ScoreTableViewCell.swift */,
 				DA07220C2131746300D0FA91 /* Assets.xcassets */,
@@ -173,24 +153,6 @@
 			productReference = DA0722162131746300D0FA91 /* TDD-BowlingGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DA6228D721499F92000312CD /* TDD-BowlingGameUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA6228DF21499F92000312CD /* Build configuration list for PBXNativeTarget "TDD-BowlingGameUITests" */;
-			buildPhases = (
-				DA6228D421499F92000312CD /* Sources */,
-				DA6228D521499F92000312CD /* Frameworks */,
-				DA6228D621499F92000312CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA6228DE21499F92000312CD /* PBXTargetDependency */,
-			);
-			name = "TDD-BowlingGameUITests";
-			productName = "TDD-BowlingGameUITests";
-			productReference = DA6228D821499F92000312CD /* TDD-BowlingGameUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,10 +167,6 @@
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					DA0722152131746300D0FA91 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = DA0722012131746300D0FA91;
-					};
-					DA6228D721499F92000312CD = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = DA0722012131746300D0FA91;
 					};
@@ -229,7 +187,6 @@
 			targets = (
 				DA0722012131746300D0FA91 /* TDD-BowlingGame */,
 				DA0722152131746300D0FA91 /* TDD-BowlingGameTests */,
-				DA6228D721499F92000312CD /* TDD-BowlingGameUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,13 +203,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA0722142131746300D0FA91 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA6228D621499F92000312CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,15 +232,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA6228D421499F92000312CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA6228DB21499F92000312CD /* TDD_BowlingGameUITests.swift in Sources */,
-				DA6228E221499FC3000312CD /* TDD_BowlingGameUITest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,11 +239,6 @@
 			isa = PBXTargetDependency;
 			target = DA0722012131746300D0FA91 /* TDD-BowlingGame */;
 			targetProxy = DA0722172131746300D0FA91 /* PBXContainerItemProxy */;
-		};
-		DA6228DE21499F92000312CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA0722012131746300D0FA91 /* TDD-BowlingGame */;
-			targetProxy = DA6228DD21499F92000312CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -520,44 +456,6 @@
 			};
 			name = Release;
 		};
-		DA6228E021499F92000312CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KU48Y2UB6V;
-				INFOPLIST_FILE = "TDD-BowlingGameUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hyer.real.TDD-BowlingGameUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "TDD-BowlingGame";
-			};
-			name = Debug;
-		};
-		DA6228E121499F92000312CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KU48Y2UB6V;
-				INFOPLIST_FILE = "TDD-BowlingGameUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hyer.real.TDD-BowlingGameUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "TDD-BowlingGame";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -584,15 +482,6 @@
 			buildConfigurations = (
 				DA0722232131746300D0FA91 /* Debug */,
 				DA0722242131746300D0FA91 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA6228DF21499F92000312CD /* Build configuration list for PBXNativeTarget "TDD-BowlingGameUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA6228E021499F92000312CD /* Debug */,
-				DA6228E121499F92000312CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
