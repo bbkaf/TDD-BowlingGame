@@ -22,15 +22,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var rollTableView: UITableView!
     
+    @IBOutlet weak var totalScore: UILabel!
     
     
     @IBAction func rollClick(_ sender: UIButton) {
         game.roll(Int(mySlider.value))
-        var totalScore = game.score()
-        print(totalScore)
+        totalScore.text = String(game.score())
         rollScores = game.rollScores
         rollTableView.reloadData()
         rollBtn.isHidden = game.isEnd()
+        
     }
     
     override func viewDidLoad() {

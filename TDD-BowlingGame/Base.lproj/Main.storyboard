@@ -21,11 +21,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwf-ei-hS6">
-                                <rect key="frame" x="159" y="591" width="56.5" height="56"/>
+                                <rect key="frame" x="160" y="591" width="56" height="56"/>
+                                <accessibility key="accessibilityConfiguration" identifier="rollBtn"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hwf-ei-hS6" secondAttribute="height" multiplier="1:1" id="mhZ-jC-KtO"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="ROLL"/>
                                 <connections>
                                     <action selector="rollClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qwn-8s-ZhP"/>
                                 </connections>
@@ -55,12 +56,14 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaW-Ln-rtU">
                                                     <rect key="frame" x="348" y="21.5" width="0.0" height="0.0"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="bonusLabel"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" red="0.45107705467255166" green="0.25374072129897929" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9li-Ks-5rg">
                                                     <rect key="frame" x="360" y="21.5" width="0.0" height="0.0"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="scoreLabel"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                                     <color key="textColor" red="0.8664654356060606" green="0.063923793878446128" blue="0.022453044269356369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -120,17 +123,27 @@
                             </tableView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="fIq-hq-d6N">
                                 <rect key="frame" x="54" y="541" width="266.5" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="pinSlider"/>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmB-v4-TyL">
+                                <rect key="frame" x="367" y="495" width="0.0" height="0.0"/>
+                                <accessibility key="accessibilityConfiguration" identifier="totalScore"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <color key="textColor" red="0.15643752519080445" green="0.37356876792219784" blue="0.82992424242424245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fIq-hq-d6N" firstAttribute="centerX" secondItem="hwf-ei-hS6" secondAttribute="centerX" id="3eH-Mu-5WW"/>
                             <constraint firstItem="hwf-ei-hS6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.15" id="7Dh-Fu-l97"/>
+                            <constraint firstItem="hmB-v4-TyL" firstAttribute="trailing" secondItem="FtW-sW-pPz" secondAttribute="trailing" constant="-8" id="GWb-EM-dZI"/>
                             <constraint firstItem="hwf-ei-hS6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JOY-rh-j0B"/>
                             <constraint firstItem="FtW-sW-pPz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="WNb-Iz-FjK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="FtW-sW-pPz" secondAttribute="top" id="Y2Q-Wg-h5u"/>
                             <constraint firstItem="FtW-sW-pPz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y3s-yk-Gvu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FtW-sW-pPz" secondAttribute="trailing" id="i6O-Gv-Ecm"/>
+                            <constraint firstItem="hmB-v4-TyL" firstAttribute="top" secondItem="FtW-sW-pPz" secondAttribute="bottom" constant="8" id="nZc-sZ-pgP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hwf-ei-hS6" secondAttribute="bottom" constant="20" id="noz-Fq-8Yi"/>
                             <constraint firstItem="fIq-hq-d6N" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="uFG-Vo-Adj"/>
                             <constraint firstItem="hwf-ei-hS6" firstAttribute="top" secondItem="fIq-hq-d6N" secondAttribute="bottom" constant="20" id="ykt-n6-8az"/>
@@ -141,6 +154,7 @@
                         <outlet property="mySlider" destination="fIq-hq-d6N" id="x98-nu-ipg"/>
                         <outlet property="rollBtn" destination="hwf-ei-hS6" id="0hr-SZ-SmQ"/>
                         <outlet property="rollTableView" destination="FtW-sW-pPz" id="0Vg-vi-lJr"/>
+                        <outlet property="totalScore" destination="hmB-v4-TyL" id="OaS-uJ-gIW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

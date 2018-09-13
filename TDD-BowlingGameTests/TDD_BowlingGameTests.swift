@@ -13,6 +13,7 @@ class TDD_BowlingGameTests: XCTestCase {
     var game: Game!
     override func setUp() {
         game = Game()
+        print("unit test go")
         super.setUp()
     }
     
@@ -44,6 +45,7 @@ class TDD_BowlingGameTests: XCTestCase {
     func testAllFivePins() {
         roll(knockPins: 5, times: 21)
         XCTAssertEqual(game.score(), 150)
+        XCTAssertEqual(game.isEnd(), true)
     }
     
     func testOneStrike() {
@@ -57,6 +59,7 @@ class TDD_BowlingGameTests: XCTestCase {
     func testPerfectGame() {
         roll(knockPins: 10, times: 12)
         XCTAssertEqual(game.score(), 300)
+        XCTAssertEqual(game.isEnd(), true)
     }
     
     func testRealGame() {
@@ -80,6 +83,7 @@ class TDD_BowlingGameTests: XCTestCase {
         game.roll(8)
         game.roll(6)
         XCTAssertEqual(game.score(), 133)
+        XCTAssertEqual(game.isEnd(), true)
     }
     private func roll(knockPins: Int, times: Int) {
         for _ in 1...times {
