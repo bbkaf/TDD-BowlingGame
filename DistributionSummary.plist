@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TDD-BowlingGame.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>9C821C1684D4D5B107C7E56311B590FA084D2B17</string>
+				<key>dateExpires</key>
+				<string>2019/5/7</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>KU48Y2UB6V.com.hyer.real.TDD-BowlingGame</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>KU48Y2UB6V</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>KU48Y2UB6V.com.hyer.real.TDD-BowlingGame</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>TDD-BowlingGame.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>64b6e1e5-a8b4-40e0-b0c6-a9d580ce40e4</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: *</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>KU48Y2UB6V</string>
+				<key>name</key>
+				<string>HUA YU TSENG</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
